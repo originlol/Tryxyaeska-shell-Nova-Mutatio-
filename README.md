@@ -1,1 +1,0 @@
-Super barebones version right now, as of the first commit. Though almost fully workable, and can replace most of the standard waybar etc bars most users make without breaking or missing any core features..
