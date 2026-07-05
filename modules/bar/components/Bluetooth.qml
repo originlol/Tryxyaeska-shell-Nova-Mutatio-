@@ -60,18 +60,18 @@ Item {
         anchorItem: mainButton
         parentWindow: statusBar
         popupWidth: 250
-        popupHeight: 220 
+        popupHeight: 220
         menuGap : -2
-        anmtSrc : "/mnt/data/Utility OG/Pictures/download.gif"
-        blurEnabled : true
-        blur : 0.6
-        blurMax : 8
-        contrast : 0.333
-        saturation : 0.3
-        imgOpac : 0.3
-        brightness : 0.0
-        colorization : 0.344
-        colorizationColor : '#1e1e2e'
+        anmtSrc : Theme.btpopupbackground
+        blurEnabled : Theme.btblurEnabled
+        blur : Theme.btblur
+        blurMax : Theme.btblurmax
+        contrast : Theme.btcontrast
+        saturation : Theme.btsaturation
+        imgOpac : Theme.btimageopacity
+        brightness : Theme.btbrightness
+        colorization : Theme.btcolorization
+        colorizationColor : Theme.btcolorizationCol
 
         Flickable {
             anchors.fill: parent

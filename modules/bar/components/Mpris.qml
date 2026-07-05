@@ -27,7 +27,7 @@ ArrowShape{
             horizontalAlignment: Text.AlignHCenter
             font.pixelSize: 14
             font.bold: true
-            color: Colors.fontCol
+            color: Theme.mprisfontCol
             text: {
                 if(spotifyMpris.length > 0) {
                     spotifyMpris[0].trackTitle + " - " + spotifyMpris[0].trackArtist

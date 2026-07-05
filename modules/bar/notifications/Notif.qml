@@ -64,7 +64,7 @@ Item{
                     Image {
                         width: parent.width; height: parent.height; anchors.fill: parent
                         fillMode: Image.PreserveAspectCrop; smooth: true; mipmap: true; antialiasing: true;
-                        source: "/mnt/data/Utility OG/Pictures/download (70) (Edited) (3).jpg"; 
+                        source: "/home/origin/Downloads/nier1.jpeg"; 
                         opacity: 0.433; layer.enabled: true
                         layer.effect: MultiEffect {
                             blurEnabled: true; blurMax: 16; blur: 0.6

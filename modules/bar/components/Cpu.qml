@@ -85,16 +85,16 @@ ArrowShape {
 
         Text {
             text: root.usageText
-            font.pixelSize: 14
+            font.pixelSize: Theme.cpuUsagefontsize
             font.bold: true
-            color: Colors.fontCol
+            color: Theme.cpuUsagetextCol
         }
 
         Text {
             text: root.tempText
-            font.pixelSize: 14
+            font.pixelSize: Theme.cpuTempfontsize
             font.bold: true
-            color: Colors.fontCol
+            color: Theme.cpuTemptextcol
         }
     }
 }

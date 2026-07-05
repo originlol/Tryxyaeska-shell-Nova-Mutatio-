@@ -77,7 +77,7 @@ Item {
             height: root.isOpen ? root.popupHeight : 0
             opacity: root.isOpen ? 1 : 0
             
-            color: Colors.popupCol
+            color: Theme.popupCol
             radius: 8
             clip: true 
             border.width: 1

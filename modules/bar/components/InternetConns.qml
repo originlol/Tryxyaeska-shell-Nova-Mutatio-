@@ -70,16 +70,16 @@ Item {
         popupHeight: 300
         menuGap : -2
         // anmtSrc: '/mnt/data/Utility OG/Pictures/nier-2b-gif.gif'
-        src : "/home/origin/Downloads/kurisu.jpg"
-        blurEnabled : true
-        blur : 0.6
-        blurMax : 10
-        contrast : 0.5
-        saturation : 0.7
-        imgOpac : 0.5
-        brightness : 0.3
-        colorization : 0.46
-        colorizationColor : '#5e2e0e'
+        src : Theme.intpopupbackground
+        blurEnabled : Theme.intblurEnabled
+        blur : Theme.intblur
+        blurMax : Theme.intblurmax
+        contrast : Theme.intcontrast
+        saturation : Theme.intsaturation
+        imgOpac : Theme.intimageopacity
+        brightness : Theme.intbrightness
+        colorization : Theme.intcolorization
+        colorizationColor : Theme.intcolorizationCol
 
         Process {
             id: osCommand

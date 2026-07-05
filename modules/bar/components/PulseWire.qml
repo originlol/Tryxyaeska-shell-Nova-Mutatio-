@@ -61,19 +61,19 @@ ArrowShape{
         }
         Row{
             anchors.verticalCenter : parent.verticalCenter
-            spacing : 5
+            spacing : 10
             Text{
                 anchors.verticalCenter : parent.verticalCenter
-                font.pixelSize : 14
+                font.pixelSize : Theme.pulseVolfontsize
                 font.bold : true
-                color : Colors.fontCol
+                color : Theme.pulseVolfontCol
                 text : Math.round(currAudioSinkVolume * 100) + "%"   
             }
             Text{
                 anchors.verticalCenter : parent.verticalCenter
-                font.pixelSize : 14
+                font.pixelSize : Theme.pulseDBfontsize
                 font.bold : true
-                color : Colors.fontCol
+                color : Theme.pulseDBfontCol
                 text : if(volumeDb > 0){
                     "+" + volumeDb + "dB"
                     }else if(volumeDb < 0 && volumeDb !="-Inf"){

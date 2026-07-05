@@ -7,13 +7,13 @@ Item {
     width: parent.width
     height: parent.height
 
-    property color boxColor: Colors.arrowshapeCol
+    property color boxColor: Theme.arrowshapeCol
     property int arrowDepth: 12 
 
     property int border: 1
-    property color borderColor: Colors.arrowborderCol
+    property color borderColor: Theme.arrowborderCol
 
-    property bool borderTop: false
+    property bool borderTop: false 
     property bool borderBottom: false
     property bool borderLeft: false
     property bool borderRight: false

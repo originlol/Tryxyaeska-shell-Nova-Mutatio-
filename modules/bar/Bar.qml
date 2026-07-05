@@ -14,7 +14,7 @@ PanelWindow{
     }
 
     implicitHeight: 30
-    color : Colors.barBg
+    color : Theme.barBg
 
     
     Rectangle {

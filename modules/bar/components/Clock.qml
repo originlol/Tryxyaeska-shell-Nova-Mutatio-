@@ -15,9 +15,9 @@ ArrowShape{
         anchors.horizontalCenter : parent.horizontalCenter
         id : clkText
         text: Qt.formatDateTime(clock.date, "dd-MM-yyyy | hh:mm ")
-        color: Colors.fontCol
+        color: Theme.clocktextCol
         font.bold: true
-        font.pixelSize : 14
+        font.pixelSize : Theme.clockfontsize
         anchors.leftMargin: 10
     }
 }
