@@ -79,9 +79,9 @@ Item{
                                         1
                                     }
                                     border.color : if(modelData.urgency === NotificationUrgency.Critical){
-                                        '#ff0048'
+                                        hoverScanner.containsMouse ? '#ff0048' : '#ecff0048'
                                     }else{
-                                        "#FFFFFF"
+                                        hoverScanner.containsMouse ?  "#FFFFFF" : "#a6adc8"
                                     }
                     
                     RowLayout{
@@ -127,6 +127,7 @@ Item{
                         }
                     }
                     MouseArea{
+                        id : hoverScanner
                         anchors.fill : parent
                         cursorShape : Qt.PointingHandCursor
                         onClicked : modelData.dismiss()
