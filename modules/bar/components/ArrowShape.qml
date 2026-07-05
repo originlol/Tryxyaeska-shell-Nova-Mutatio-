@@ -10,7 +10,7 @@ Item {
     property int arrowDepth: 12 
 
     property int border: 1
-    property color borderColor: "#FFFFFF"
+    property color borderColor: '#ffffff'
 
     property bool borderTop: false
     property bool borderBottom: false
