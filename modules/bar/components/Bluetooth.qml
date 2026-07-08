@@ -184,11 +184,11 @@ Item {
                         }) : []
                     }
                     delegate: Rectangle {
-                        width: parent.width; height: 40; color: uBtn.containsMouse ? "#313244" : "transparent"; radius: 5
+                        width: parent.width; height: 40; color: "transparent"; radius: 5
                         Row {
                             anchors.verticalCenter: parent.verticalCenter; anchors.left: parent.left; anchors.leftMargin: 10; spacing: 10
                             IconImage { source: Quickshell.iconPath(modelData.icon); width: 20; height: 20 }
-                            Text { text: modelData.name !== "" ? modelData.name : modelData.deviceName; color: "white" }
+                            Text { text: modelData.name !== "" ? modelData.name : modelData.deviceName; color: uBtn.containsMouse ? "white" : "#a6adc8"; Behavior on color{ColorAnimation { duration: 150; easing.type: Easing.OutQuad}}}
                         }
                         MouseArea { id: uBtn; anchors.fill: parent; hoverEnabled: true; onClicked: modelData.connect() }
                     }

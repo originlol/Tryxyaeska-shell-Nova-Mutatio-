@@ -69,8 +69,8 @@ Item {
         popupWidth: 500
         popupHeight: 300
         menuGap : -2
-        // anmtSrc: '/mnt/data/Utility OG/Pictures/nier-2b-gif.gif'
-        src : Theme.intpopupbackground
+        anmtSrc: Theme.intpopupbackground
+        //src : Theme.intpopupbackground
         blurEnabled : Theme.intblurEnabled
         blur : Theme.intblur
         blurMax : Theme.intblurmax
@@ -437,6 +437,15 @@ Item {
                             delegate: Rectangle {
                                 width: parent.width; height: 35; radius: 5; 
                                 color: "transparent"
+                                property bool isReady : false
+                                Component.onCompleted: isReady = true
+                                opacity: (myPopup.isOpen && isReady) ? 1 : 0
+                                Behavior on opacity{
+                                    NumberAnimation{
+                                        duration : 600
+                                        easing.type : Easing.OutQuad
+                                    }
+                                }
                                 
                                 Row {
                                     anchors.verticalCenter: parent.verticalCenter
