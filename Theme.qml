@@ -50,7 +50,7 @@ QtObject{
     property int btpopupwidth: 250     //removed
     property int btpopupheight: 220    //removed
     property int btmenugap: -2         //removed
-    property url btpopupbackground:  Qt.resolvedUrl("/home/origin/Downloads/p6.jpg")
+    property url btpopupbackground:  customtheme.btpopupbackground
     property bool btblurEnabled: customtheme.btblurEnabled
     property double btblur: customtheme.btblur
     property double btblurmax: customtheme.btblurmax
@@ -99,7 +99,7 @@ QtObject{
     property int intpopupwidth: 500      //removed
     property int intpopupheight: 300     //removed
     property int intmenugap: -2          //removed
-    property url intpopupbackground: Qt.resolvedUrl("/home/origin/Downloads/kurisu.jpg")
+    property url intpopupbackground: customtheme.intpopupbackground
     property bool intblurEnabled: customtheme.intblurEnabled
     property double intblur: customtheme.intblur
     property double intblurmax: customtheme.intblurmax
@@ -147,7 +147,7 @@ QtObject{
     //Tray Popup
     property color traypopuptextCol: customtheme.traypopuptextCol
     property int traymenugap: -8         //removed
-    property url traypopupbackground: Qt.resolvedUrl("/home/origin/Downloads/kurisu.jpg")
+    property url traypopupbackground: customtheme.traypopupbackground
     property bool trayblurEnabled: customtheme.trayblurEnabled
     property double trayblur: customtheme.trayblur
     property double trayblurmax: customtheme.trayblurmax
@@ -162,7 +162,7 @@ QtObject{
     //Tray ChildPopup
     property color trayCpopuptextCol: customtheme.trayCpopuptextCol
     property int trayCmenugap: -12        //removed
-    property url trayCpopupbackground: Qt.resolvedUrl("/home/origin/Downloads/kurisu.jpg")
+    property url trayCpopupbackground: customtheme.trayCpopupbackground
     property bool trayCblurEnabled: customtheme.trayCblurEnabled
     property double trayCblur: customtheme.trayCblur
     property double trayCblurmax: customtheme.trayCblurmax
@@ -180,5 +180,6 @@ QtObject{
 
     //WorkSpaces
     property int workspaceSpacing: 12  //removed
+    property string workspaceFontFamily : customtheme.workspaceFontFamily
 
 }

@@ -177,6 +177,7 @@ QtObject{
 
     //WorkSpaces
     property int workspaceSpacing: 12  //removed
+    property string workspaceFontFamily : fontFamily
 
 
 
