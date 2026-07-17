@@ -60,6 +60,8 @@ Item{
             onHoveredChanged: {
                 if (hovered) {
                     centerVisibility = true
+                } else {
+                    closeTimer.restart()
                 }
             }
         }
